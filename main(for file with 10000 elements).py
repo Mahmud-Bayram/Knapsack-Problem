@@ -49,7 +49,7 @@ def weighted_knapsack(lines):
 values = weighted_knapsack(lines)
 
 
-file2 = open("knapsack_dosyalar\\ks_10000_0", "r")
+file2 = open("ks_10000_0", "r")
 
 lineNo = []
 items = [[0 for _ in range(2)] for _ in range(int(features[0]))]
