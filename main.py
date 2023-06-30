@@ -1,9 +1,9 @@
-file = open("knapsack_dosyalar\\ks_200_0", "r")  # 200 elemanlı dosyada değerler ve ağırlıklar arasında iki boşluk olduğundan, 2. ve 6. satır iki boşluk olacak şekilde ayarlanmalıdır.
-features = file.readline().split("  ")
+file = open("ks_200_0", "r")
+features = file.readline().split(" ")
 lines = [[0 for i in range(2)] for j in range(int(features[0]))]
 
 lines = file.read().split('\n')
-lines = [line.split('  ') for line in lines]
+lines = [line.split(' ') for line in lines]
 
 
 def weighted_knapsack(W, lines):
